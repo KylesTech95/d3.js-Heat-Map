@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 1em;
+}
+.svg{
+    box-shadow: 0 0 7px .25px #333;
+    background: ghost;
+    margin: 1rem 0;
+}
+#tooltip{
+    padding: 1rem;
+    background: black;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    gap: 10px;
+}
+
+.legend-container{
+    height: 150px;
+    width: 350px;
+    background: #333;
+    opacity:.8;
+}
+.legRect{
+    filter: blur(.5px);
+    stroke: #333;
+    stroke-width: .75px;
+}
+.legAxis line,
+.legAxis path,
+.legAxis text{
+    stroke:white;
+    stroke-width: 1px;
+}
